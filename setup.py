@@ -5,7 +5,7 @@ def main():
     from setuptools import setup
     from nmlread import NamelistReader as reader
 
-    install_requires = ["microapp>=0.1.3", "f90nml", "yaml"]
+    install_requires = ["microapp>=0.1.3", "f90nml"]
 
     setup(
         name=reader._name_,

@@ -5,7 +5,7 @@ import os
 here = os.path.dirname(os.path.abspath(__file__))
 app = os.path.join(here, "..", "nmlread.py")
 namelist = os.path.join(here, "data.nl")
-jsondata = os.path.join(here, "data.json")
+jsondata = os.path.join(here, "data.txt")
 
 def test_basic():
 
