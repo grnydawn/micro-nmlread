@@ -28,7 +28,7 @@ def main():
         keywords="microapp nmlread",
         include_package_data=True,
         install_requires=install_requires,
-        scripts=["nmlread.py"],
+        packages=["nmlread"],
         entry_points={"microapp.apps": "nmlread = nmlread"},
         project_urls={
             "Bug Reports": "https://github.com/grnydawn/micro-nmlread/issues",

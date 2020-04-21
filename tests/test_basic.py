@@ -3,14 +3,13 @@ from microapp import MicroappProject
 import os
 
 here = os.path.dirname(os.path.abspath(__file__))
-app = os.path.join(here, "..", "nmlread.py")
 namelist = os.path.join(here, "data.nl")
 jsondata = os.path.join(here, "data.txt")
 
 def test_basic():
 
     prj = MicroappProject()
-    cmd = "%s %s -o %s" % (app, namelist, jsondata)
+    cmd = "nmlread %s -o %s" % (namelist, jsondata)
 
     ret = prj.main(cmd)
 

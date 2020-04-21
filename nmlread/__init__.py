@@ -14,7 +14,7 @@ from microapp import App
 class NamelistReader(App):
 
     _name_ = "nmlread"
-    _version_ = "0.1.3"
+    _version_ = "0.1.4"
     _description_ = "Microapp Fortran namelist reader"
     _long_description_ = "Microapp Fortran namelist reader"
     _author_ = "Youngsung Kim"
