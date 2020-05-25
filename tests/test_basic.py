@@ -11,7 +11,7 @@ def test_basic():
     prj = MicroappProject()
     cmd = "nmlread %s -o %s" % (namelist, jsondata)
 
-    ret = prj.main(cmd)
+    ret, fwds = prj.run_command(cmd)
 
     assert ret == 0
     assert os.path.exists(jsondata)

@@ -14,7 +14,7 @@ from microapp import App
 class NamelistReader(App):
 
     _name_ = "nmlread"
-    _version_ = "0.1.4"
+    _version_ = "0.1.5"
     _description_ = "Microapp Fortran namelist reader"
     _long_description_ = "Microapp Fortran namelist reader"
     _author_ = "Youngsung Kim"
@@ -28,7 +28,7 @@ class NamelistReader(App):
 
         self.register_forward("data", type=Any, help="namelist dictionary object")
 
-    def perform(self, mgr, args):
+    def perform(self, args):
 
         namelist = args.namelist["_"]
 
